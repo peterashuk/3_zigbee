@@ -1032,7 +1032,7 @@ CONFIG_ESPTOOLPY_MONITOR_BAUD=115200
 # Partition Table
 #
 # default:
-CONFIG_PARTITION_TABLE_SINGLE_APP=y
+# CONFIG_PARTITION_TABLE_SINGLE_APP is not set
 # default:
 # CONFIG_PARTITION_TABLE_SINGLE_APP_LARGE is not set
 # default:
@@ -1040,11 +1040,11 @@ CONFIG_PARTITION_TABLE_SINGLE_APP=y
 # default:
 # CONFIG_PARTITION_TABLE_TWO_OTA_LARGE is not set
 # default:
-# CONFIG_PARTITION_TABLE_CUSTOM is not set
+CONFIG_PARTITION_TABLE_CUSTOM=y
 # default:
 CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
 # default:
-CONFIG_PARTITION_TABLE_FILENAME="partitions_singleapp.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions.csv"
 # default:
 CONFIG_PARTITION_TABLE_OFFSET=0x8000
 # default:
@@ -3831,6 +3831,27 @@ CONFIG_WL_SECTOR_SIZE_4096=y
 # default:
 CONFIG_WL_SECTOR_SIZE=4096
 # end of Wear Levelling
+
+#
+# Zigbee
+#
+CONFIG_ZB_ENABLED=y
+# CONFIG_ZB_ZCZR is not set
+CONFIG_ZB_ZED=y
+# CONFIG_ZB_ZGPD is not set
+# default:
+CONFIG_ZB_RADIO_NATIVE=y
+# default:
+# CONFIG_ZB_RADIO_SPINEL_UART is not set
+
+#
+# Zigbee Example
+#
+# end of Zigbee Example
+
+# default:
+# CONFIG_ZB_DEBUG_MODE is not set
+# end of Zigbee
 # end of Component config
 
 # default:
